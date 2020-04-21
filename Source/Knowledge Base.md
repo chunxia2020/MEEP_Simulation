@@ -10,4 +10,7 @@ Note also that an almost zero-bandwidth Gaussian beam will produce high-frequenc
 
 ## Why doesn't the continuous-wave (CW) source produce an exact single-frequency response?
 
-The ``ContinuousSource``
+The [`ContinuousSource`](https://meep.readthedocs.io/en/latest/Python_User_Interface/#continuoussource) does not produce an exact single-frequency response exp(-iwt) due to its finite turn-on time which is described by a hyperbolic-tangent function. In the asymptotic limit, the resulting fields are the single-frequency response; it's just that if you Fourier transform the response over the entire simulation you will see a finite bandwidth due to the turn-on. 
+
+
+For the turning-on process: If the `width` is 0 (the default) then the source turns on sharply which creates high-frequency transient effects. Otherwise, the source turns on with a shape of (1+tanh( t/`width` - `slowness` ))/2. That is, the `width` parameter controls the width of the turn-on. The `slowness` parameter controls how far into the exponential tail of the tanh function the source turns on. The default `slowness` of 3.0 means that the source turns on at (1+tanh(-3))/2 = 0.00247 of its maximum amplitude. A larger value for `slowness` means that the source turns on even more gradually at the beginning (i.e., farther in the exponential tail). The effect of varying the two parameters `width` and `slowness` independently in the turn-on function is shown below.
