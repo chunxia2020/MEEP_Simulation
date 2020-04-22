@@ -58,3 +58,6 @@ The [`GaussianSource`](https://meep.readthedocs.io/en/latest/Python_User_Interfa
   - _**Bloch-periodic boundaries**_ It is demonstrated in the example of calculating [Transmittance Spectra for Planewave at Normal Incidence](https://meep.readthedocs.io/en/latest/Python_Tutorials/Mode_Decomposition/#diffraction-spectrum-of-a-binary-grating).
 
   A more detailed description can be found [here](https://meep.readthedocs.io/en/latest/Introduction/#boundary-conditions-and-symmetries)
+
+
+  ![](https://github.com/chunxia2020/MEEP_Simulation/blob/master/Source/Attachment/1.png)
