@@ -59,5 +59,5 @@ The [`GaussianSource`](https://meep.readthedocs.io/en/latest/Python_User_Interfa
 
   A more detailed description can be found [here](https://meep.readthedocs.io/en/latest/Introduction/#boundary-conditions-and-symmetries)
 
-
+The source turn on time can then be calculated as: `t0 = start_time + cutoff*width` = 0 + 5*(1/0.2) = 25 [Meep time unit], which is exactly where the peak appears at.
   ![](https://github.com/chunxia2020/MEEP_Simulation/blob/master/Source/Attachment/1.png)
