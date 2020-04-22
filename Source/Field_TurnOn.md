@@ -1,6 +1,6 @@
 # Source: Unchirped pulse
 ## Free space pulse propagation
-The simulation script is in [Source/1_Test-0--PeriodicBoundary.py](https://github.com/chunxia2020/MEEP_Simulation/blob/master/Source/1_Test-0--PeriodicBoundary.py). Before starting the simulation, one needs to specify each of the simulation objects
+The simulation script is in [Source/1_Test-0--PeriodicBoundary.py](https://github.com/chunxia2020/MEEP_Simulation/blob/master/Source/Examples/1_Test-0--PeriodicBoundary.py). Before starting the simulation, one needs to specify each of the simulation objects
 - IMPORT MEEP :
 
 The first thing to do always is to load the Meep library:
